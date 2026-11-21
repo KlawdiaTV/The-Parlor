@@ -46,7 +46,9 @@
       margin-inline: auto;
     }
 
-    /* NAVIGATION */
+    /* =========================
+       NAVIGATION
+    ========================= */
 
     .site-header {
       position: sticky;
@@ -88,7 +90,9 @@
 
     .nav-links a:hover { color: var(--text); }
 
-    /* HERO */
+    /* =========================
+       HERO
+    ========================= */
 
     .hero {
       position: relative;
@@ -96,10 +100,16 @@
       padding: 116px 0 112px;
       text-align: center;
       background:
-        radial-gradient(ellipse at 50% 15%,
-          rgba(127,9,194,.28), transparent 55%),
-        radial-gradient(ellipse at 100% 100%,
-          rgba(20,87,141,.25), transparent 50%);
+        radial-gradient(
+          ellipse at 50% 15%,
+          rgba(127,9,194,.28),
+          transparent 55%
+        ),
+        radial-gradient(
+          ellipse at 100% 100%,
+          rgba(20,87,141,.25),
+          transparent 50%
+        );
     }
 
     .eyebrow {
@@ -128,7 +138,9 @@
       font-size: clamp(1.05rem, 2.5vw, 1.27rem);
     }
 
-    /* BUTTONS */
+    /* =========================
+       BUTTONS
+    ========================= */
 
     .button-row {
       display: flex;
@@ -154,7 +166,9 @@
 
     .button-primary {
       background: linear-gradient(
-        135deg, var(--purple-deep), #a14fea
+        135deg,
+        var(--purple-deep),
+        #a14fea
       );
       color: white;
     }
@@ -164,7 +178,9 @@
       background: rgba(255,255,255,.04);
     }
 
-    /* GENERAL SECTIONS */
+    /* =========================
+       GENERAL SECTIONS
+    ========================= */
 
     section.content {
       padding: 84px 0;
@@ -194,7 +210,9 @@
       margin: 0;
     }
 
-    /* ABOUT ME */
+    /* =========================
+       ABOUT ME
+    ========================= */
 
     .about {
       max-width: 850px;
@@ -222,7 +240,9 @@
       color: #d6c5e7;
     }
 
-    /* GAME LIBRARY */
+    /* =========================
+       GAME LIBRARY
+    ========================= */
 
     .grid {
       display: grid;
@@ -232,7 +252,9 @@
 
     .card {
       background: linear-gradient(
-        145deg, var(--surface-2), var(--surface)
+        145deg,
+        var(--surface-2),
+        var(--surface)
       );
       border: 1px solid var(--border);
       border-radius: var(--radius);
@@ -265,7 +287,9 @@
       text-decoration: underline;
     }
 
-    /* COLLABORATIONS */
+    /* =========================
+       COLLABORATIONS
+    ========================= */
 
     .collab-section {
       background:
@@ -337,7 +361,9 @@
 
     .collab-card {
       background: linear-gradient(
-        145deg, #1a2340, #171625
+        145deg,
+        #1a2340,
+        #171625
       );
       border: 1px solid rgba(196,140,255,.18);
       border-radius: 18px;
@@ -385,7 +411,9 @@
       text-decoration: underline;
     }
 
-    /* COLLABORATION CONTACT */
+    /* =========================
+       COLLABORATION CONTACT
+    ========================= */
 
     .collab-contact {
       max-width: 850px;
@@ -418,7 +446,9 @@
       overflow-wrap: anywhere;
     }
 
-    /* SOCIAL MEDIA */
+    /* =========================
+       SOCIAL MEDIA
+    ========================= */
 
     .social-grid {
       display: grid;
@@ -454,7 +484,9 @@
 
     .arrow { color: #c895ff; }
 
-    /* FOOTER */
+    /* =========================
+       FOOTER
+    ========================= */
 
     footer {
       border-top: 1px solid var(--border);
@@ -464,7 +496,9 @@
       text-align: center;
     }
 
-    /* MOBILE */
+    /* =========================
+       MOBILE
+    ========================= */
 
     @media (max-width: 760px) {
       .nav {
@@ -491,7 +525,9 @@
         grid-template-columns: repeat(2, minmax(0,1fr));
       }
 
-      .collab-contact { padding: 30px 20px; }
+      .collab-contact {
+        padding: 30px 20px;
+      }
     }
 
     @media (max-width: 480px) {
@@ -523,7 +559,9 @@
 
 <body>
 
-  <!-- HEADER -->
+  <!-- =========================
+       HEADER
+  ========================= -->
 
   <header class="site-header">
     <nav class="container nav" aria-label="Main navigation">
@@ -544,7 +582,9 @@
 
   <main>
 
-    <!-- WELCOME -->
+    <!-- =========================
+         WELCOME
+    ========================= -->
 
     <section class="hero" id="home">
       <div class="container">
@@ -582,7 +622,9 @@
       </div>
     </section>
 
-    <!-- SECTION 1 - ABOUT ME -->
+    <!-- =========================
+         SECTION 1 - ABOUT ME
+    ========================= -->
 
     <section class="content" id="about">
       <div class="container">
@@ -627,7 +669,9 @@
       </div>
     </section>
 
-    <!-- SECTION 2 - GAME LIBRARY -->
+    <!-- =========================
+         SECTION 2 - GAME LIBRARY
+    ========================= -->
 
     <section class="content alt" id="games">
       <div class="container">
@@ -699,7 +743,9 @@
       </div>
     </section>
 
-    <!-- SECTION 3 - COLLABORATIONS -->
+    <!-- =========================
+         SECTION 3 - COLLABORATIONS
+    ========================= -->
 
     <section class="content collab-section" id="collaborations">
       <div class="container">
@@ -751,7 +797,9 @@
 
         <div class="collab-grid">
 
-          <!-- GAME DISCOVERY -->
+          <!-- =====================
+               GAME DISCOVERY
+          ====================== -->
 
           <article class="collab-card">
 
@@ -777,7 +825,9 @@
 
           </article>
 
-          <!-- LIVE EXPERIENCES -->
+          <!-- =====================
+               LIVE EXPERIENCES
+          ====================== -->
 
           <article class="collab-card">
 
@@ -799,7 +849,9 @@
 
           </article>
 
-          <!-- CREATIVE CONTENT -->
+          <!-- =====================
+               CREATIVE CONTENT
+          ====================== -->
 
           <article class="collab-card">
 
@@ -819,25 +871,34 @@
 
           </article>
 
-          <!-- SOMETHING DIFFERENT -->
+          <!-- =====================
+               BEYOND CONTENT
+               CHARITY & FUNDRAISING
+          ====================== -->
 
           <article class="collab-card">
 
-            <div class="collab-icon" aria-hidden="true">💡</div>
+            <div class="collab-icon" aria-hidden="true">💜</div>
 
-            <h3>Something Different?</h3>
+            <h3>Beyond Content</h3>
 
             <p>
-              Have an unusual campaign idea?
-              I'm always interested in exploring
-              something creative.
+              Some collaborations can be about more
+              than just content! I'm open to
+              participating in charity streams,
+              fundraising events, and community
+              initiatives that support meaningful causes.
+              Have something in mind?
+              Let's talk about it!
             </p>
 
           </article>
 
         </div>
 
-        <!-- CONTACT BOX -->
+        <!-- =====================
+             CONTACT BOX
+        ====================== -->
 
         <div class="collab-contact">
 
@@ -865,7 +926,9 @@
       </div>
     </section>
 
-    <!-- SECTION 4 - SOCIAL MEDIA -->
+    <!-- =========================
+         SECTION 4 - SOCIAL MEDIA
+    ========================= -->
 
     <section class="content alt" id="socials">
       <div class="container">
@@ -883,6 +946,8 @@
 
         <div class="social-grid">
 
+          <!-- TWITCH -->
+
           <a class="social"
              href="https://www.twitch.tv/klawdiatv"
              target="_blank"
@@ -893,6 +958,8 @@
             </span>
             <span class="arrow">↗</span>
           </a>
+
+          <!-- YOUTUBE GAMING -->
 
           <a class="social"
              href="https://www.youtube.com/@KlawdiaTV"
@@ -905,6 +972,8 @@
             <span class="arrow">↗</span>
           </a>
 
+          <!-- YOUTUBE STUDIO -->
+
           <a class="social"
              href="https://www.youtube.com/@KlawdiaStudio"
              target="_blank"
@@ -915,6 +984,8 @@
             </span>
             <span class="arrow">↗</span>
           </a>
+
+          <!-- TIKTOK -->
 
           <a class="social"
              href="https://www.tiktok.com/@klawdia.tv"
@@ -927,6 +998,8 @@
             <span class="arrow">↗</span>
           </a>
 
+          <!-- INSTAGRAM -->
+
           <a class="social"
              href="https://www.instagram.com/klawdiatv/"
              target="_blank"
@@ -937,6 +1010,8 @@
             </span>
             <span class="arrow">↗</span>
           </a>
+
+          <!-- BUSINESS EMAIL -->
 
           <a class="social"
              href="mailto:contact.klawdiatv@gmail.com">
@@ -953,7 +1028,9 @@
 
   </main>
 
-  <!-- FOOTER -->
+  <!-- =========================
+       FOOTER
+  ========================= -->
 
   <footer>
     <div class="container">
