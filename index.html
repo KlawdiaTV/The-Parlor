@@ -9,6 +9,11 @@
 
   <title>The Parlor | KlawdiaTV</title>
 
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --bg: #0c0c14;
@@ -30,8 +35,29 @@
       margin: 0;
       color: var(--text);
       background: var(--bg);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       line-height: 1.65;
+    }
+
+    /* MAIN TYPOGRAPHY */
+
+    h1, h2, h3, .brand {
+      font-family: 'Cinzel', Georgia, serif;
+      font-weight: 700;
+    }
+
+    .heading-purple {
+      color: #c48cff;
+    }
+
+    .hero p,
+    .section-heading > p,
+    .collab-subtitle {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      font-weight: 600;
+      font-size: clamp(1.4rem, 2.8vw, 1.85rem);
+      line-height: 1.3;
     }
 
     a { color: inherit; }
@@ -88,7 +114,9 @@
       text-decoration: none;
     }
 
-    .nav-links a:hover { color: var(--text); }
+    .nav-links a:hover {
+      color: var(--text);
+    }
 
     /* =========================
        HERO
@@ -113,6 +141,7 @@
     }
 
     .eyebrow {
+      font-family: 'Cinzel', Georgia, serif;
       color: #d3a7ff;
       font-size: .85rem;
       font-weight: 800;
@@ -120,22 +149,26 @@
       letter-spacing: .18em;
     }
 
-    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3, p {
+      margin-top: 0;
+    }
 
     h1 {
       font-size: clamp(3rem, 8vw, 5.5rem);
       line-height: 1.07;
-      letter-spacing: -.05em;
+      letter-spacing: .015em;
       margin: 18px 0 22px;
     }
 
-    h1 span { color: #c48cff; }
+    h1 span {
+      color: #c48cff;
+    }
 
     .hero p {
       max-width: 690px;
       margin: 0 auto 30px;
       color: #d7d1e3;
-      font-size: clamp(1.05rem, 2.5vw, 1.27rem);
+      font-size: clamp(1.5rem, 3vw, 2rem);
     }
 
     /* =========================
@@ -162,7 +195,9 @@
       transition: transform .2s, background .2s;
     }
 
-    .button:hover { transform: translateY(-2px); }
+    .button:hover {
+      transform: translateY(-2px);
+    }
 
     .button-primary {
       background: linear-gradient(
@@ -200,7 +235,7 @@
 
     .section-heading h2 {
       font-size: clamp(2rem, 4.4vw, 2.8rem);
-      letter-spacing: -.035em;
+      letter-spacing: .01em;
       line-height: 1.18;
       margin-bottom: 12px;
     }
@@ -221,7 +256,9 @@
       font-size: 1.08rem;
     }
 
-    .about p { color: #d8d4df; }
+    .about p {
+      color: #d8d4df;
+    }
 
     .chips {
       display: flex;
@@ -310,7 +347,7 @@
     .collab-intro h2 {
       font-size: clamp(2.1rem, 5vw, 3.3rem);
       line-height: 1.15;
-      letter-spacing: -.035em;
+      letter-spacing: .01em;
       margin: 18px 0;
     }
 
@@ -319,7 +356,7 @@
     }
 
     .collab-subtitle {
-      font-size: 1.15rem;
+      font-size: clamp(1.4rem, 2.8vw, 1.85rem);
       color: #d8c5e8;
       margin-bottom: 0;
     }
@@ -344,6 +381,7 @@
     }
 
     .collab-label {
+      font-family: 'Cinzel', Georgia, serif;
       color: #c48cff;
       text-align: center;
       text-transform: uppercase;
@@ -482,7 +520,9 @@
       font-size: .82rem;
     }
 
-    .arrow { color: #c895ff; }
+    .arrow {
+      color: #c895ff;
+    }
 
     /* =========================
        FOOTER
@@ -512,9 +552,13 @@
         gap: 8px 15px;
       }
 
-      .hero { padding: 80px 0; }
+      .hero {
+        padding: 80px 0;
+      }
 
-      section.content { padding: 64px 0; }
+      section.content {
+        padding: 64px 0;
+      }
 
       .grid,
       .collab-grid {
@@ -546,7 +590,9 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
+      html {
+        scroll-behavior: auto;
+      }
 
       .button,
       .social,
@@ -595,7 +641,7 @@
 
         <h1>
           WELCOME TO<br>
-          <span></span>
+          <span>THE PARLOR</span>
         </h1>
 
         <p>
@@ -633,33 +679,63 @@
           <div class="eyebrow">
             01 / The person behind the streams
           </div>
-          <h2>About Me</h2>
+
+          <h2>
+            About <span class="heading-purple">Me</span>
+          </h2>
         </div>
 
         <div class="about">
 
           <p>
             Hey, I'm <strong>Klawdia</strong>!
-I'm a Romanian variety streamer who enjoys gaming, reacting to videos, and having conversations about pretty much anything. I started streaming because I wanted a place where I could play games, share my thoughts, have a laugh, and meet people along the way. And that's still what I want The Parlor to be.
+            I'm a Romanian variety streamer who enjoys gaming,
+            reacting to videos, and having conversations about
+            pretty much anything. I started streaming because
+            I wanted a place where I could play games,
+            share my thoughts, have a laugh, and meet
+            people along the way. And that's still what
+            I want The Parlor to be.
           </p>
 
           <p>
-When it comes to gaming, I love a good story, interesting characters, exploring new worlds, and the occasional challenge that makes me question my life choices. You'll mostly find me playing story-driven games, souls-likes, survival horror, and whatever interesting demos catch my attention. I'm not a huge fan of games that rely entirely on jump scares, although I somehow keep ending up in them.
-
+            When it comes to gaming, I love a good story,
+            interesting characters, exploring new worlds,
+            and the occasional challenge that makes me
+            question my life choices. You'll mostly find
+            me playing story-driven games, souls-likes,
+            survival horror, and whatever interesting
+            demos catch my attention. I'm not a huge fan
+            of games that rely entirely on jump scares,
+            although I somehow keep ending up in them.
           </p>
 
-           <p>
-But gaming is only part of what I do. I also enjoy watching videos, reacting to whatever catches my interest, sharing my opinions, and discussing things with chat. Sometimes we have proper conversations, sometimes we laugh at ridiculous stuff, and sometimes we start talking about one thing and somehow end up somewhere completely different.
-
-          </p>
           <p>
-I'm pretty relaxed, curious, open-minded, occasionally sarcastic, and very good at forgetting what I was about to say. I like keeping things natural rather than trying to make every stream perfect. Some days we play games, some days we react, and some days we just grab a coffee and talk.
-
+            But gaming is only part of what I do.
+            I also enjoy watching videos, reacting to
+            whatever catches my interest, sharing my
+            opinions, and discussing things with chat.
+            Sometimes we have proper conversations,
+            sometimes we laugh at ridiculous stuff,
+            and sometimes we start talking about one
+            thing and somehow end up somewhere
+            completely different.
           </p>
-          <p>
-So, welcome to <strong>The Parlor</strong>. Grab a coffee, get comfortable, and feel free to join the conversation!
-perfect
 
+          <p>
+            I'm pretty relaxed, curious, open-minded,
+            occasionally sarcastic, and very good at
+            forgetting what I was about to say.
+            I like keeping things natural rather than
+            trying to make every stream perfect.
+            Some days we play games, some days we react,
+            and some days we just grab a coffee and talk.
+          </p>
+
+          <p>
+            So, welcome to <strong>The Parlor</strong>.
+            Grab a coffee, get comfortable, and feel
+            free to join the conversation!
           </p>
 
           <div class="chips">
@@ -682,9 +758,14 @@ perfect
       <div class="container">
 
         <div class="section-heading">
-          <div class="eyebrow">02 / My gaming archive</div>
+          <div class="eyebrow">
+            02 / My gaming archive
+          </div>
 
-          <h2>Explore My Game Library</h2>
+          <h2>
+            Explore My
+            <span class="heading-purple">Game Library</span>
+          </h2>
 
           <p>
             Two places to discover what I've played,
@@ -698,6 +779,7 @@ perfect
           <!-- FULL GAMES -->
 
           <article class="card">
+
             <div class="icon" aria-hidden="true">🎮</div>
 
             <h3>Full Games</h3>
@@ -718,11 +800,13 @@ perfect
                rel="noopener noreferrer">
               Explore Full Games →
             </a>
+
           </article>
 
           <!-- DEMO GAMES -->
 
           <article class="card">
+
             <div class="icon" aria-hidden="true">🕹️</div>
 
             <h3>Demo Games</h3>
@@ -742,6 +826,7 @@ perfect
                rel="noopener noreferrer">
               Explore Demo Games →
             </a>
+
           </article>
 
         </div>
@@ -939,9 +1024,14 @@ perfect
       <div class="container">
 
         <div class="section-heading">
-          <div class="eyebrow">04 / Find me online</div>
+          <div class="eyebrow">
+            04 / Find me online
+          </div>
 
-          <h2>Let's Stay Connected</h2>
+          <h2>
+            Let's Stay
+            <span class="heading-purple">Connected</span>
+          </h2>
 
           <p>
             Pick your favorite platform
